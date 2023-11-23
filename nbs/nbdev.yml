@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "spectral_line_broadening"
+  site-url: "https://Rhys-McAlister.github.io/spectral_line_broadening"
+  description: "A package for broadening spectral lines using a trained machine learning model."
+  repo-branch: main
+  repo-url: "https://github.com/Rhys-McAlister/spectral_line_broadening"
