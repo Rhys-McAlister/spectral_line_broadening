@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\nfoo\n\n foo ()\n\n\n\n\nload_pytorch_model\n\n load_pytorch_model (model_path)\n\n\n\n\npytorch_model_spectrum\n\n pytorch_model_spectrum (frequencies, intensities, xs, model)\n\n\n\n\nnorm_integration\n\n norm_integration (spectra_sum, xs, norm_range_min, norm_range_max)\n\n\n\n\nfixed_var_spectrum\n\n fixed_var_spectrum (frequencies, intensities, xs, fixed_var)\n\n\n\n\nset_x_spacing\n\n set_x_spacing (plot_range_max, plot_range_min, wave_number_spacing)\n\n\n\n\nboltzmann\n\n boltzmann (energies)\n\n\n\n\ngenerate_spectrums\n\n generate_spectrums (df:pandas.core.frame.DataFrame)\n\n\n\n\nprepare_dataset\n\n prepare_dataset (df:pandas.core.frame.DataFrame)\n\nFix columns and datatypes so the freq and intensity values can be accessed.\n\n\n\nprepare_processed_dataset\n\n prepare_processed_dataset (df:pandas.core.frame.DataFrame)\n\nGenerates final processed dataset with broaden spectrum values and a column for the associated SMILES string.\nParameters: df: DataFrame containing the SMILES strings and the raw frequency and intensity values.\nReturns: DataFrame containing the SMILES strings and the processed spectrum values.\n\nfrequencies = np.array([1598.0372406800595, 3682.1786484947465, 3780.8505903567507])\nintensities = np.array([76.3428, 3.6852, 57.5517])\n\nxs = np.arange(400,4002,2)\noutput = pytorch_model_spectrum(frequencies,intensities,xs)\n\nplt.plot(xs, output)\nplt.bar(frequencies, intensities, width=20, color=\"red\")\n\n&lt;BarContainer object of 3 artists&gt;"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "spectral_line_broadening",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "spectral_line_broadening",
+    "section": "Install",
+    "text": "Install\npip install spectral_line_broadening"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "spectral_line_broadening",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2"
+  }
+]
